@@ -3,7 +3,7 @@ import { auth } from "./firebase"; // Import the Firebase auth instance
 import { signInWithEmailAndPassword } from "firebase/auth";
 import "./index.css"; // Import your CSS file
 import { useNavigate } from "react-router-dom";
-import Sign_Up from "./Sign_Up"; // Import the Signup component
+import SignUp from "./SignUp"; // Import the Signup component
 
 function Login({ toggleLogin }) {
   const history = useNavigate();
@@ -41,9 +41,9 @@ function Login({ toggleLogin }) {
           &times;
         </span>
         <li>
-          <a href="#" onClick={openSign_up} className="signup-link">
+          <button onClick={openSign_up} className="signup-link">
             SIGN UP
-          </a>
+          </button>
         </li>
         <h2>Login</h2>
         <div className="input-container">
@@ -66,7 +66,7 @@ function Login({ toggleLogin }) {
         </div>
         <button onClick={handleLogin}>Login</button>
         {errorMessage && <p className="error-message">{errorMessage}</p>} {/* Display error message */}
-        {showSignup && <Sign_Up onClose={() => setShowSignup(false)} />}
+        {showSignup && <SignUp onClose={() => setShowSignup(false)} />}
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { auth } from './firebase'; // Import the Firebase auth instance
 import { signOut } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 
-function Home_Page() {
+function HomePage() {
   const history = useNavigate();
 
   const handleSignOut = async () => {
@@ -24,4 +24,4 @@ function Home_Page() {
   );
 }
 
-export default Home_Page;
+export default HomePage;

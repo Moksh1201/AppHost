@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Bar from './Topnav'
-import Home_Page from './Home_Page';
+import HomePage from './HomePage';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Login from './Login';
 
@@ -15,7 +15,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Bar/>} />
         <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<Home_Page/>} />
+        <Route path="/home" element={<HomePage/>} />
 
       </Routes>
     </div>

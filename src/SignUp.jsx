@@ -5,7 +5,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import "./index.css"; // Import your CSS file
 
 
-function Sign_Up({ onClose }) {
+function SignUp({ onClose }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -100,4 +100,4 @@ function Sign_Up({ onClose }) {
   );
 }
 
-export default Sign_Up;
+export default SignUp;
