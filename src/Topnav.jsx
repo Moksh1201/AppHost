@@ -1,13 +1,12 @@
 // Bar.jsx
 import React, { useState } from "react";
-import { auth } from "./firebase"; // Import the Firebase auth instance
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import "./index.css"; // Import your CSS file
 import Login from "./Login"; // Import the Login component
 // import Sign_Up from "./Sign_Up"; // Import the Signup component
 
 function Bar() {
-  const history = useNavigate();
+
   const [showLogin, setShowLogin] = useState(false);
   
 
@@ -15,10 +14,10 @@ function Bar() {
     setShowLogin(!showLogin);
   };
 
-  const openSign_Up = () => {
-    // setShowSignup(true);
-    setShowLogin(false);
-  };
+  // const openSign_Up = () => {
+  //   // setShowSignup(true);
+  //   setShowLogin(false);
+  // };
 
   return (
     <div className="nav">
@@ -30,12 +29,12 @@ function Bar() {
         <div className="nav-bar">
           <ul>
             <li>
-              <a href="#">POST</a>
+              <button >POST</button>
             </li>
             <li>
-              <a href="#" onClick={toggleLogin}>
+              <button onClick={toggleLogin}>
                 LOGIN
-              </a>
+              </button>
             </li>
             {/* <li>
               <a href="#" onClick={openSign_Up}>
