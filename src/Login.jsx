@@ -41,7 +41,7 @@ function Login({ toggleLogin }) {
           &times;
         </span>
         <li>
-          <button onClick={openSign_up} className="signup-link">
+          <button onClick={openSign_up} className="signup-button">
             SIGN UP
           </button>
         </li>

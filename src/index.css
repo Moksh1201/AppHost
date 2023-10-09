@@ -239,11 +239,12 @@ button:hover {
   background-color: #0056b3; /* Darker shade on hover */
 }
 
-.signup-link {
+.signup-button {
   float: left;
   margin-left: 80%;
   text-align: center;
-  font-size: 24px;
+  font-size: 12px;
+  width: 15%;
   
 }
 
